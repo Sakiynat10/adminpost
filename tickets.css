@@ -1,0 +1,222 @@
+.tickets{
+    margin-top: 200px;
+}
+
+
+.ticket-title{
+    color: #000;
+    font-family: Lato;
+    font-size: 49px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.top-ticket{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dark .top-ticket h1{
+    color: #fff;
+}
+
+.ticket-buttons{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    width: 200px;
+}
+
+.ticket-buttons button{
+    width: 71.094px;
+    height: 35.501px;
+    border: none;
+    border-radius: 5px;
+}
+
+.ticket-buttons button:last-child{
+    background-color: rgba(16, 205, 69, 1);
+    color: #fff;
+}
+
+.ticket-table{
+    margin-top: 64px;
+    max-width: 1200px;
+    width: 100%;
+    border: 2px solid  #41403f0f;
+    border-radius: 10px;
+    border-collapse: collapse;
+}
+
+.ticket-table tr:first-child th{
+    color: var(--grayscale-black, #252733);
+    font-family: Mulish;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.4px;
+}
+
+.ticket-table .table-body tr{
+    display: flex;
+    width: 100%;
+    height: 66px;
+    border: 2px solid  #41403f0f;
+}
+
+th{
+    color: #878787;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+th,td{
+    display: flex;
+    align-items: center;
+    height: 66px;
+    border-collapse: collapse;
+    margin-left: 0;
+    width: 100%;
+    padding-left: 20px;
+
+}
+
+td{
+    color: #414141;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.bottom-ticket1 tr td:nth-child(3){
+    color: #000000;
+}
+
+.bottom-ticket1 tr td:nth-child(4){
+    color: rgba(228, 64, 103, 1);
+}
+
+.bottom-ticket1 tr td:nth-child(5){
+    color: #414141;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.bottom-ticket1.table-head{
+    background-color: transparent;
+}
+
+.bottom-ticket1 td:first-child{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+th:not(:first-child),
+td:not(:first-child){
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+
+tbody tr:first-child td:last-child a,
+tbody tr:nth-child(3) td:last-child a,
+tbody tr:nth-child(5) td:last-child a{
+    display: flex;
+    padding: 5px 12px;
+    margin-left: 60px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--grayscale-white, #FFF);
+    background-color: rgba(241, 43, 44, 1);
+    border-radius: 100px;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+tbody tr:nth-child(2) td:last-child a,
+tbody tr:nth-child(7) td:last-child a{
+    display: flex;
+    padding: 5px 12px;
+    margin-left: 60px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--grayscale-white, #FFF);
+    background-color: rgba(254, 196, 0, 1);
+    border-radius: 100px;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+tbody tr:nth-child(4) td:last-child a,
+tbody tr:nth-child(6) td:last-child a,
+tbody tr:nth-child(8) td:last-child a{
+    display: flex;
+    padding: 5px 12px;
+    margin-left: 60px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--grayscale-white, #FFF);
+    background-color: rgba(41, 204, 151, 1);
+    border-radius: 100px;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+td:last-child{
+    display: flex;
+    align-items: center;
+    gap: 64px;
+}
+
+.ticket-table td span{
+    color: var(--grayscale-gray-light, #C5C7CD);
+    font-family: Mulish;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.1px;
+}
+
+
+tbody tr:nth-child(4) td:last-child ,
+tbody tr:nth-child(6) td:last-child ,
+tbody tr:nth-child(8) td:last-child {
+    gap: 44px;
+}
+
+.bottom-ticket1 img{
+    border-radius: 50%;
+}

@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+.d-flex{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+html{
+    
+}
+
+:root{
+    transition: 0.5s;
+    scroll-behavior: smooth;
+    --aside-width: 275px;
+    --header-height: 80px;
+    --footer-height: 50px;
+    --aside-padding: 20px;
+
+    --switch-size: 20px;
+    --switch-padding: 2.5px;
+    --switch-height: calc(var(--switch-size) + 2  *  var(--switch-padding));
+    --switch-transition: 0.5s;
+    --switch-bg-color: #fff;
+    --switch-parent-color: black;
+}
+
+.switch {
+    height: var(--switch-height);
+    width:calc(2 * var(--switch-size) + 2 * var(--switch-padding));
+    padding: var(--switch-padding);
+    border-radius: calc(var(--switch-height) / 2);
+    appearance: none;
+    transition: var(--switch-transition);
+    background-color: var(--switch-parent-color);
+}
+
+.switch::after{
+    content: "";
+    display: inline-block;
+    width: var(--switch-size);
+    height: var(--switch-size);
+    border-radius: 50%;
+    transition: var(--switch-transition);
+    background-color: var(--switch-bg-color);
+}
+
+.switch:checked{
+    background-color: var(--switch-bg-color);
+    border-radius: 1px solid #000;
+}
+
+.switch:checked::after{
+    margin-left: var(--switch-size);
+    background-color: var(--switch-parent-color);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+footer{
+    background-color: grey;
+}
